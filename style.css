@@ -919,6 +919,123 @@
   color: #fff;
 }
 
+body {
+  margin: 0;
+  font-family: "Lora", sans-serif;
+  background-color: #0f172a;
+  color: #fff;
+}
+
+.container1 {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.container1 h1 {
+  font-size: 55px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.module {
+  background-color: #1e293b;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+.module--reverse {
+  flex-direction: row-reverse;
+}
+.module__media {
+  width: 40%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.module__content {
+  padding: 30px;
+  width: 60%;
+}
+.module__title {
+  font-size: 35px;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  color: #fff;
+}
+.module__list {
+  padding-left: 20px;
+  line-height: 20px;
+}
+.module__list :nth-of-type(1) {
+  margin-top: 25px;
+}
+.module__list :nth-of-type(3) {
+  margin-top: 25px;
+}
+.module__list h3 {
+  font-size: 22px;
+  margin-top: 30px;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+.module__list .ul-1 {
+  padding-top: 50px;
+}
+.module__list li {
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 23px;
+}
+.module__list p {
+  padding-top: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+
+@media screen and (max-width: 768px) {
+  .container1 h1 {
+    font-size: 50px;
+  }
+  .container1 .module {
+    flex-direction: column;
+  }
+  .container1 .module__list h3 {
+    font-size: 18px;
+  }
+  .container1 .module__list li {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .container1 .module__list .ul-1 {
+    padding-top: 10px;
+  }
+  .container1 .module__list p {
+    padding-top: 30px;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 20px;
+  }
+  .container1 .module__list :nth-of-type(1) {
+    margin-top: 20px;
+  }
+  .container1 .module__list :nth-of-type(3) {
+    margin-top: 20px;
+  }
+  .container1 .module__title {
+    font-size: 30px;
+  }
+  .container1 .module__media, .container1 .module__content {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 1880px) {
   .section2 .left p {
     font-size: 12px;

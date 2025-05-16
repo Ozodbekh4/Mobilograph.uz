@@ -1023,6 +1023,153 @@ $font-Libre: 'Libre', sans-serif;
 
 
 
+body {
+    margin: 0;
+    font-family: $font-Lora;
+    background-color: #0f172a;
+    color: #fff;
+}
+
+.container1 {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    h1 {
+        font-size: 55px;
+        text-align: center;
+        letter-spacing: 2px;
+    }
+}
+
+
+.module {
+    background-color: #1e293b;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+
+    &--reverse {
+        flex-direction: row-reverse;
+    }
+
+    &__media {
+        width: 40%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__content {
+        padding: 30px;
+        width: 60%;
+    }
+
+    &__title {
+        font-size: 35px;
+        margin-bottom: 20px;
+        letter-spacing: 1px;
+        color: #fff;
+    }
+
+    &__list {
+        padding-left: 20px;
+        line-height: 20px;
+
+        :nth-of-type(1) {
+            margin-top: 25px;
+        }
+
+        :nth-of-type(3) {
+            margin-top: 25px;
+        }
+
+        h3 {
+            font-size: 22px;
+            margin-top: 30px;
+            line-height: 25px;
+            letter-spacing: 1px;
+        }
+
+        .ul-1 {
+            padding-top: 50px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            font-size: 18px;
+            line-height: 23px;
+        }
+
+        p {
+            padding-top: 50px;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 25px;
+            letter-spacing: 1px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container1 {
+        h1 {
+            font-size: 50px;
+        }
+
+        .module {
+            flex-direction: column;
+
+            &__list {
+                h3 {
+                    font-size: 18px;
+                }
+
+                li{
+                    font-size: 15px;
+                    line-height: 18px;
+                }
+
+                .ul-1 {
+                    padding-top: 10px;
+                }
+
+                p{
+                    padding-top: 30px;
+                    font-size: 13px;
+                    font-weight: 700;
+                    line-height: 20px;
+                }
+
+                :nth-of-type(1) {
+                    margin-top: 20px;
+                }
+        
+                :nth-of-type(3) {
+                    margin-top: 20px;
+                }
+            }
+
+            &__title{
+                font-size: 30px;
+            }
+
+            &__media,
+            &__content {
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+
+
 
 
 @media screen and (max-width: 1880px) {
